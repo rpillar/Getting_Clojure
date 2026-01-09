@@ -1,32 +1,6 @@
-# demo
+# Getting Clojure
 
-FIXME: description
-
-## Installation
-
-Download from http://example.com/FIXME.
-
-## Usage
-
-FIXME: explanation
-
-    $ java -jar demo-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
+Just a set of examples based on reading (and trying to understand) the book 'Getting Clojure' by Russ Olsen
 
 ## License
 
