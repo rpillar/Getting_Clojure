@@ -1,0 +1,525 @@
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; Starting Jack-in: (cd /Users/rpillar/clojure/demo; lein update-in :dependencies conj '[nrepl,"1.5.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.58.0"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless)
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; Starting Jack-in: (cd /Users/rpillar/clojure/demo; lein update-in :dependencies conj '[nrepl,"1.5.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.58.0"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless)
+; Connecting using "Leiningen" project type.
+; Connecting ...
+; Reading port file: file:///Users/rpillar/clojure/demo/.nrepl-port ...
+; Using host:port localhost:57307 ...
+; Hooking up nREPL sessions on port 57307...
+; Connected session: clj, port: 57307
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉demo.core꞉> 
+"Please see https://calva.io/output/#about-stdout-in-the-repl-window
+about why stdout printed to this file is prepended with `;` to be line comments."
+clj꞉demo.core꞉> 
+(+ 1 1)
+2
+clj꞉demo.core꞉> 
+nil
+clj꞉pre-and-post꞉> 
+#'pre-and-post/publish-book
+clj꞉pre-and-post꞉> 
+; This is a book
+nil
+clj꞉pre-and-post꞉> 
+; Execution error (AssertionError) at pre-and-post/publish-book (pre_and_post.clj:9).
+; Assert failed: (:title book)
+clj꞉pre-and-post꞉> 
+; Execution error (AssertionError) at pre-and-post/publish-book (pre_and_post.clj:9).
+; Assert failed: (:title book)
+clj꞉pre-and-post꞉> 
+; Execution error (AssertionError) at pre-and-post/publish-book (pre_and_post.clj:9).
+; Assert failed: (:title book)
+clj꞉pre-and-post꞉> 
+; Execution error (AssertionError) at pre-and-post/publish-book (pre_and_post.clj:9).
+; Assert failed: (:title book)
+clj꞉pre-and-post꞉> 
+; Execution error (AssertionError) at pre-and-post/publish-book (pre_and_post.clj:9).
+; Assert failed: (:title book)
+clj꞉pre-and-post꞉> 
+; Execution error (ArithmeticException) at pre-and-post/eval10599 (pre_and_post.clj:33).
+; Divide by zero
+clj꞉pre-and-post꞉> 
+nil
+clj꞉pre-and-post꞉> 
+; Execution error (AssertionError) at pre-and-post/publish-book (pre_and_post.clj:9).
+; Assert failed: (:title book)
+clj꞉pre-and-post꞉> 
+; This is a book
+nil
+clj꞉pre-and-post꞉> 
+; Execution error (AssertionError) at pre-and-post/publish-book (pre_and_post.clj:9).
+; Assert failed: (:title book)
+clj꞉pre-and-post꞉> 
+#'pre-and-post/post-check
+clj꞉pre-and-post꞉> 
+; Execution error (AssertionError) at pre-and-post/post-check (pre_and_post.clj:28).
+; Assert failed: (> amount 10)
+clj꞉pre-and-post꞉> 
+; Execution error (AssertionError) at pre-and-post/post-check (pre_and_post.clj:28).
+; Assert failed: (> amount 10)
+clj꞉pre-and-post꞉> 
+; Execution error (AssertionError) at pre-and-post/post-check (pre_and_post.clj:28).
+; Assert failed: (> amount 10)
+clj꞉pre-and-post꞉> 
+; Execution error (AssertionError) at pre-and-post/post-check (pre_and_post.clj:28).
+; Assert failed: (> amount 10)
+clj꞉pre-and-post꞉> 
+; Execution error (AssertionError) at pre-and-post/post-check (pre_and_post.clj:28).
+; Assert failed: (> amount 10)
+clj꞉pre-and-post꞉> 
+; Execution error (AssertionError) at pre-and-post/post-check (pre_and_post.clj:28).
+; Assert failed: (> amount 10)
+clj꞉pre-and-post꞉> 
+; Syntax error compiling at (src/functional_things.clj:17:1).
+; Unable to resolve symbol: cheap? in this context
+clj꞉functional-things꞉> 
+nil
+clj꞉functional-things꞉> 
+#'functional-things/dracula
+clj꞉functional-things꞉> 
+#'functional-things/war-and-peace
+clj꞉functional-things꞉> 
+#'functional-things/cheap?
+clj꞉functional-things꞉> 
+#'functional-things/horror?
+clj꞉functional-things꞉> 
+true
+clj꞉functional-things꞉> 
+true
+clj꞉functional-things꞉> 
+false
+clj꞉functional-things꞉> 
+#'functional-things/cheap-book?
+clj꞉functional-things꞉> 
+#'functional-things/check-dracula
+clj꞉functional-things꞉> 
+true
+clj꞉functional-things꞉> 
+true
+clj꞉functional-things꞉> 
+#'functional-things/both?
+clj꞉functional-things꞉> 
+{:title "Dracula", :genre "Horror", :price 8.99}
+clj꞉functional-things꞉> 
+#function[functional-things/eval10660/fn--10661]
+clj꞉functional-things꞉> 
+#'functional-things/anon-add
+clj꞉functional-things꞉> 
+3
+clj꞉functional-things꞉> 
+; Syntax error compiling at (src/functional_things.clj:62:18).
+; Unable to resolve symbol: buy-this-book in this context
+clj꞉functional-things꞉> 
+#'functional-things/buy-this-book
+clj꞉functional-things꞉> 
+#'functional-things/very-cheap?
+clj꞉functional-things꞉> 
+#'functional-things/medium-cheap?
+clj꞉functional-things꞉> 
+#'functional-things/expensive?
+clj꞉functional-things꞉> 
+nil
+clj꞉functional-things꞉> 
+nil
+clj꞉functional-things꞉> 
+nil
+clj꞉functional-things꞉> 
+#'functional-things/expensive?
+clj꞉functional-things꞉> 
+{:title "War and Peace", :genre "History", :price 17.99}
+clj꞉functional-things꞉> 
+15
+clj꞉functional-things꞉> 
+#'functional-things/add-function
+clj꞉functional-things꞉> 
+#'functional-things/add-function
+clj꞉functional-things꞉> 
+#'functional-things/args
+clj꞉functional-things꞉> 
+15
+clj꞉functional-things꞉> 
+#'functional-things/cheaper-than
+clj꞉functional-things꞉> 
+#'functional-things/cheaper-than
+clj꞉functional-things꞉> 
+#'functional-things/real-cheap?
+clj꞉functional-things꞉> 
+#'functional-things/sort-of-cheap?
+clj꞉functional-things꞉> 
+#'functional-things/this-could-be-cheap?
+clj꞉functional-things꞉> 
+#'functional-things/this-could-be-cheap?
+clj꞉functional-things꞉> 
+#'functional-things/cheaper-than
+clj꞉functional-things꞉> 
+#'functional-things/real-cheap?
+clj꞉functional-things꞉> 
+#'functional-things/sort-of-cheap?
+clj꞉functional-things꞉> 
+#'functional-things/this-could-be-cheap?
+clj꞉functional-things꞉> 
+8.99
+clj꞉functional-things꞉> 
+; Execution error (NullPointerException) at functional-things/cheaper-than (functional_things.clj:82).
+; Cannot invoke "Object.getClass()" because "x" is null
+clj꞉functional-things꞉> 
+nil
+clj꞉functional-things꞉> 
+#'functional-things/not-horror?
+clj꞉functional-things꞉> 
+false
+clj꞉functional-things꞉> 
+true
+clj꞉functional-things꞉> 
+#'functional-things/cheap-hoor?
+clj꞉functional-things꞉> 
+#'functional-things/cheap-horror?
+clj꞉functional-things꞉> 
+true
+clj꞉functional-things꞉> 
+#function[functional-things/eval10697/fn--10698]
+clj꞉functional-things꞉> 
+#'functional-things/my-add
+clj꞉functional-things꞉> 
+2
+clj꞉functional-things꞉> 
+; Syntax error compiling def at (src/functional_things.clj:107:1).
+; Too many arguments to def
+clj꞉functional-things꞉> 
+#'functional-things/x-func
+clj꞉functional-things꞉> 
+3
+clj꞉functional-things꞉> 
+; Syntax error compiling at (src/functional_things.clj:110:2).
+; Unable to resolve symbol: x in this context
+clj꞉functional-things꞉> 
+#'functional-things/my-double
+clj꞉functional-things꞉> 
+24
+clj꞉functional-things꞉> 
+#'functional-things/my-add
+clj꞉functional-things꞉> 
+3
+clj꞉functional-things꞉> 
+#'functional-things/my-new-double
+clj꞉functional-things꞉> 
+64
+clj꞉functional-things꞉> 
+; Execution error (FileNotFoundException) at ring-simple-example/eval10762$loading (ring_simple_example.clj:1).
+; Could not locate ring/adapter/jetty__init.class, ring/adapter/jetty.clj or ring/adapter/jetty.cljc on classpath.
+clj꞉ring-simple-example꞉> 
+; Connecting using "Leiningen" project type.
+; Connecting ...
+; Reading port file: file:///Users/rpillar/clojure/demo/.nrepl-port ...
+; Using host:port localhost:57307 ...
+; Reconnecting: disconnecting existing client for sessions: clj
+; Hooking up nREPL sessions on port 57307...
+; Connected session: clj, port: 57307
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉demo.core꞉> 
+; Execution error (FileNotFoundException) at ring-simple-example/eval10777$loading (ring_simple_example.clj:1).
+; Could not locate ring/adapter/jetty__init.class, ring/adapter/jetty.clj or ring/adapter/jetty.cljc on classpath.
+clj꞉ring-simple-example꞉> 
+; nREPL Connection was closed for client: nrepl-client-2, port: 57307
+; Connecting using "Leiningen" project type.
+; Connecting ...
+; Reading port file: file:///Users/rpillar/clojure/demo/.nrepl-port ...
+; Using host:port localhost:60003 ...
+; Hooking up nREPL sessions on port 60003...
+; Connected session: clj, port: 60003
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉demo.core꞉> 
+; Execution error (FileNotFoundException) at ring-simple-example/eval9515$loading (ring_simple_example.clj:1).
+; Could not locate ring/adapter/jetty__init.class, ring/adapter/jetty.clj or ring/adapter/jetty.cljc on classpath.
+clj꞉ring-simple-example꞉> 
+; nREPL Connection was closed for client: nrepl-client-3, port: 60003
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; Starting Jack-in: (cd /Users/rpillar/clojure/demo; lein update-in :dependencies conj '[nrepl,"1.5.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.58.0"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless)
+; Using host:port 127.0.0.1:60048 ...
+; Hooking up nREPL sessions on port 60048...
+; Connected session: clj, port: 60048
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉demo.core꞉> 
+; Jack-in done.
+clj꞉demo.core꞉> 
+; Execution error (FileNotFoundException) at ring-simple-example/eval9790$loading (ring_simple_example.clj:1).
+; Could not locate ring/adapter/jetty__init.class, ring/adapter/jetty.clj or ring/adapter/jetty.cljc on classpath.
+clj꞉ring-simple-example꞉> 
+; Syntax error compiling at (src/functional_things.clj:119:1).
+; Unable to resolve symbol: my-new-double in this context
+clj꞉functional-things꞉> 
+#'functional-things/my-new-double
+clj꞉functional-things꞉> 
+64
+clj꞉functional-things꞉> 
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; Starting Jack-in: (cd /Users/rpillar/clojure/demo; lein update-in :dependencies conj '[nrepl,"1.5.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.58.0"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless)
+; Using host:port 127.0.0.1:60385 ...
+; Hooking up nREPL sessions on port 60385...
+; Connected session: clj, port: 60385
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉demo.core꞉> 
+; Jack-in done.
+clj꞉demo.core꞉> 
+; Execution error (FileNotFoundException) at ring-simple-example/eval9790$loading (ring_simple_example.clj:1).
+; Could not locate ring/adapter/jetty__init.class, ring/adapter/jetty.clj or ring/adapter/jetty.cljc on classpath.
+clj꞉ring-simple-example꞉> 
+; Syntax error compiling at (project.clj:1:1).
+; Unable to resolve symbol: defproject in this context
+clj꞉user꞉> 
+; Connecting using "Leiningen" project type.
+; Connecting ...
+; Reading port file: file:///Users/rpillar/clojure/demo/.nrepl-port ...
+; Using host:port localhost:60446 ...
+; Hooking up nREPL sessions on port 60446...
+; Connected session: clj, port: 60446
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉demo.core꞉> 
+; Syntax error compiling at (project.clj:1:1).
+; Unable to resolve symbol: defproject in this context
+clj꞉user꞉> 
+; Execution error (FileNotFoundException) at ring-simple-example/eval9556$loading (ring_simple_example.clj:1).
+; Could not locate ring/adapter/jetty__init.class, ring/adapter/jetty.clj or ring/adapter/jetty.cljc on classpath.
+clj꞉ring-simple-example꞉> 
+; Execution error (FileNotFoundException) at ring-simple-example/eval9562$loading (ring_simple_example.clj:1).
+; Could not locate ring/adapter/jetty__init.class, ring/adapter/jetty.clj or ring/adapter/jetty.cljc on classpath.
+clj꞉ring-simple-example꞉> 
+; nREPL Connection was closed for client: nrepl-client-6, port: 60446
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; Starting Jack-in: (cd /Users/rpillar/clojure/demo; lein update-in :dependencies conj '[nrepl,"1.5.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.58.0"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless)
+; Using host:port 127.0.0.1:60819 ...
+; Hooking up nREPL sessions on port 60819...
+; Connected session: clj, port: 60819
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉demo.core꞉> 
+; Jack-in done.
+clj꞉demo.core꞉> 
+; Execution error (FileNotFoundException) at ring-simple-example/eval9790$loading (ring_simple_example.clj:1).
+; Could not locate ring/adapter/jetty__init.class, ring/adapter/jetty.clj or ring/adapter/jetty.cljc on classpath.
+clj꞉ring-simple-example꞉> 
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; Starting Jack-in: (cd /Users/rpillar/clojure/demo; lein update-in :dependencies conj '[nrepl,"1.5.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.58.0"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless)
+; Using host:port 127.0.0.1:60850 ...
+; Hooking up nREPL sessions on port 60850...
+; Connected session: clj, port: 60850
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉demo.core꞉> 
+; Jack-in done.
+clj꞉demo.core꞉> 
+#'functional-things/my-new-double
+clj꞉functional-things꞉> 
+64
+clj꞉functional-things꞉> 
+; Execution error (FileNotFoundException) at ring-simple-example/eval9798$loading (ring_simple_example.clj:1).
+; Could not locate ring/adapter/jetty__init.class, ring/adapter/jetty.clj or ring/adapter/jetty.cljc on classpath.
+clj꞉ring-simple-example꞉> 
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; Starting Jack-in: (cd /Users/rpillar/clojure/demo; lein update-in :dependencies conj '[nrepl,"1.5.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.58.0"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless)
+; Using host:port 127.0.0.1:61016 ...
+; Hooking up nREPL sessions on port 61016...
+; Connected session: clj, port: 61016
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉demo.core꞉> 
+; Jack-in done.
+clj꞉demo.core꞉> 
+nil
+clj꞉ring-simple-example꞉> 
+#'ring-simple-example/handler
+clj꞉ring-simple-example꞉> 
+#'ring-simple-example/-main
+clj꞉ring-simple-example꞉> 
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; Starting Jack-in: (cd /Users/rpillar/clojure/demo; lein update-in :dependencies conj '[nrepl,"1.5.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.58.0"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless)
+; Using host:port 127.0.0.1:50304 ...
+; Hooking up nREPL sessions on port 50304...
+; Connected session: clj, port: 50304
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉demo.core꞉> 
+; Jack-in done.
+clj꞉demo.core꞉> 
+#'ring-simple-example/log-request
+clj꞉ring-simple-example꞉> 
+; Syntax error compiling def at (src/ring_simple_example.clj:15:1).
+; Too many arguments to def
+clj꞉ring-simple-example꞉> 
+#'ring-simple-example/log-request
+clj꞉ring-simple-example꞉> 
+; Syntax error compiling def at (src/ring_simple_example.clj:15:1).
+; Too many arguments to def
+clj꞉ring-simple-example꞉> 
+#'ring-simple-example/middlewarre-logging
+clj꞉ring-simple-example꞉> 
+; Syntax error compiling at (src/ring_simple_example.clj:21:3).
+; Unable to resolve symbol: handler in this context
+clj꞉ring-simple-example꞉> 
+; Syntax error compiling def at (src/ring_simple_example.clj:20:1).
+; Too many arguments to def
+clj꞉ring-simple-example꞉> 
+#'ring-simple-example/app
+clj꞉ring-simple-example꞉> 
+#'ring-simple-example/-main
+clj꞉ring-simple-example꞉> 
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; Starting Jack-in: (cd /Users/rpillar/clojure/demo; lein update-in :dependencies conj '[nrepl,"1.5.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.58.0"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless)
+; Using host:port 127.0.0.1:53614 ...
+; Hooking up nREPL sessions on port 53614...
+; Connected session: clj, port: 53614
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉demo.core꞉> 
+; Jack-in done.
+clj꞉demo.core꞉> 
+; Syntax error compiling at (src/ring_simple_example.clj:29:3).
+; Unable to resolve symbol: -main in this context
+clj꞉ring-simple-example꞉> 
+; Syntax error compiling at (src/ring_simple_example.clj:24:20).
+; Unable to resolve symbol: app in this context
+clj꞉ring-simple-example꞉> 
+; Syntax error compiling at (src/ring_simple_example.clj:21:3).
+; Unable to resolve symbol: middlewarre-logging in this context
+clj꞉ring-simple-example꞉> 
+; Syntax error compiling at (src/ring_simple_example.clj:18:5).
+; Unable to resolve symbol: log-request in this context
+clj꞉ring-simple-example꞉> 
+nil
+clj꞉ring-simple-example꞉> 
+#'ring-simple-example/handler
+clj꞉ring-simple-example꞉> 
+#'ring-simple-example/log-request
+clj꞉ring-simple-example꞉> 
+#'ring-simple-example/middlewarre-logging
+clj꞉ring-simple-example꞉> 
+#'ring-simple-example/app
+clj꞉ring-simple-example꞉> 
+#'ring-simple-example/-main
+clj꞉ring-simple-example꞉> 
+; Response :  {:status 200, :headers {Content-Type text/html}, :body Hello from your minimal web application}
+; Response :  {:status 200, :headers {Content-Type text/html}, :body Hello from your minimal web application}
+; Response :  {:status 200, :headers {Content-Type text/html}, :body Hello from your minimal web application}
+; Response :  {:status 200, :headers {Content-Type text/html}, :body Hello from your minimal web application}
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; Starting Jack-in: (cd /Users/rpillar/clojure/demo; lein update-in :dependencies conj '[nrepl,"1.5.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.58.0"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless)
+; Using host:port 127.0.0.1:54337 ...
+; Hooking up nREPL sessions on port 54337...
+; Connected session: clj, port: 54337
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉demo.core꞉> 
+; Jack-in done.
+clj꞉demo.core꞉> 
+[3 2]
+clj꞉demo.fundamentals-3꞉> 
+{:a 4, :b 2}
+clj꞉demo.fundamentals-3꞉> 
+[1 4 3]
+clj꞉demo.fundamentals-3꞉> 
+[1 4 3]
+clj꞉demo.fundamentals-3꞉> 
+{:a 1, :b 5}
+clj꞉demo.fundamentals-3꞉> 
+nil
+clj꞉temporary-variables꞉> 
+#'temporary-variables/compute-discount-amount
+clj꞉temporary-variables꞉> 
+10.99
+clj꞉temporary-variables꞉> 
+10.99
+clj꞉temporary-variables꞉> 
+10.99
+clj꞉temporary-variables꞉> 
+14.335199999999999
+clj꞉temporary-variables꞉> 
+14.335199999999999
+clj꞉temporary-variables꞉> 
+#'temporary-variables/compute-discount-amount
+clj꞉temporary-variables꞉> 
+"14.34"
+clj꞉temporary-variables꞉> 
+#'temporary-variables/compute-discount-amount-2
+clj꞉temporary-variables꞉> 
+#'temporary-variables/user-discounts
+clj꞉temporary-variables꞉> 
+; Syntax error compiling at (src/temporary_variables.clj:42:1).
+; Unable to resolve symbol: dfn in this context
+clj꞉temporary-variables꞉> 
+; Syntax error compiling at (src/temporary_variables.clj:44:21).
+; Unable to resolve symbol: amount in this context
+clj꞉temporary-variables꞉> 
+#'temporary-variables/compute-discount-amount-3
+clj꞉temporary-variables꞉> 
+#'temporary-variables/compute-richards-price
+clj꞉temporary-variables꞉> 
+17.6
+clj꞉temporary-variables꞉> 
+0.12
+clj꞉temporary-variables꞉> 
+10.0
+clj꞉temporary-variables꞉> 
+17.6
+clj꞉temporary-variables꞉> 
+#'temporary-variables/book-with-no-author
+clj꞉temporary-variables꞉> 
+#'temporary-variables/book-with-no-author
+clj꞉temporary-variables꞉> 
+#'temporary-variables/book-with-author
+clj꞉temporary-variables꞉> 
+#'temporary-variables/book-with-no-author
+clj꞉temporary-variables꞉> 
+#'temporary-variables/uppercase-author
+clj꞉temporary-variables꞉> 
+"RUSS OLSEN"
+clj꞉temporary-variables꞉> 
+nil
+clj꞉temporary-variables꞉> 
+"RUSS OLSEN"
+clj꞉temporary-variables꞉> 
+#'temporary-variables/uppercase-author-2
+clj꞉temporary-variables꞉> 
+"ANON"
+clj꞉temporary-variables꞉> 
+"Russ Olsen"
+clj꞉temporary-variables꞉> 
+1
+clj꞉temporary-variables꞉> 
+1
+clj꞉temporary-variables꞉> 
+nil
+clj꞉temporary-variables꞉> 
+1
+clj꞉temporary-variables꞉> 
+3
+clj꞉temporary-variables꞉> 
+4
+clj꞉temporary-variables꞉> 
+false
+clj꞉temporary-variables꞉> 
+false
+clj꞉temporary-variables꞉> 
+true
+clj꞉temporary-variables꞉> 
+true
+clj꞉temporary-variables꞉> 
+false
+clj꞉temporary-variables꞉> 

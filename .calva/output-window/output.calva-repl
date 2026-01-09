@@ -1,0 +1,308 @@
+; This is the Calva REPL Window.
+; It's just a file, really, with some special treatment from Calva.
+; Use it as a REPL input prompt if you like. (When the REPL is connected.)
+; TIPS: The keyboard shortcut `ctrl+alt+o r` shows and focuses this window
+; Please see https://calva.io/repl-window/ for more info.
+; Happy coding! ♥️
+
+; TIPS: As with any Clojure file when the REPL is connected:
+; - `alt+enter` evaluates the current top level form.
+; - `ctrl+enter` evaluates the current form.
+; Special for this file:
+; - `alt+up` and `alt+down` traverse up and down the REPL command history
+;    when the cursor is after the last contents at the prompt
+; 
+; See also the Calva Inspector: https://calva.io/inspector/
+
+PLEASE NOTE
+We will update the default location of this file.
+The new default location will be
+  "<projectRootPath>/.calva/repl.calva-repl"
+For now the legacy path is used by default.
+To give yourself a smooth transition, you can opt in
+to the change, by configuring this setting as false:
+  "calva.useLegacyReplWindowPath"
+and then add "**/.calva/repl.calva-repl" to your ".gitignore" file.
+
+
+This file is configured as the output destination for all REPL output.
+You can configure this with the setting:
+  "calva.outputDestinations"
+
+
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: (cd /Users/rpillar/clojure/demo; lein update-in :dependencies conj '[nrepl,"1.5.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.58.0"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless)
+; Using host:port 127.0.0.1:50685 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉demo.core꞉> 
+"Please see https://calva.io/output/#about-stdout-in-the-repl-window
+about why stdout printed to this file is prepended with `;` to be line comments."
+clj꞉demo.core꞉> 
+; Jack-in done.
+clj꞉demo.core꞉> 
+true
+clj꞉demo.fundamentals-1꞉> 
+nil
+clj꞉multimethods꞉> 
+#'multimethods/dispatch-book-format
+clj꞉multimethods꞉> 
+#'multimethods/normalise-book
+clj꞉multimethods꞉> 
+#multifn[normalise-book 0x25effa7a]
+clj꞉multimethods꞉> 
+#multifn[normalise-book 0x25effa7a]
+clj꞉multimethods꞉> 
+#multifn[normalise-book 0x25effa7a]
+clj꞉multimethods꞉> 
+{:title "War and Peace", :author "Richard"}
+clj꞉multimethods꞉> 
+{:title "Emma", :author "Jane Austen"}
+clj꞉multimethods꞉> 
+{:title "1984", :author "George Orwell"}
+clj꞉multimethods꞉> 
+nil
+clj꞉pre-and-post꞉> 
+#'pre-and-post/publish-book
+clj꞉pre-and-post꞉> 
+; This is a book
+nil
+clj꞉pre-and-post꞉> 
+; nil
+nil
+clj꞉pre-and-post꞉> 
+#'pre-and-post/publish-book
+clj꞉pre-and-post꞉> 
+; This is a book
+nil
+clj꞉pre-and-post꞉> 
+; Execution error (AssertionError) at pre-and-post/publish-book (pre_and_post.clj:10).
+; Assert failed: (:title book)
+clj꞉pre-and-post꞉> 
+#'pre-and-post/calculate-fee
+clj꞉pre-and-post꞉> 
+; Execution error (AssertionError) at pre-and-post/calculate-fee (pre_and_post.clj:16).
+; Assert failed: (< (:amount invoice) 10)
+clj꞉pre-and-post꞉> 
+; Execution error (AssertionError) at pre-and-post/calculate-fee (pre_and_post.clj:16).
+; Assert failed: (< (:amount invoice) 10)
+clj꞉pre-and-post꞉> 
+; Add a fee to this invoice.
+nil
+clj꞉pre-and-post꞉> 
+; Add a fee to this invoice.
+nil
+clj꞉pre-and-post꞉> 
+#'pre-and-post/calculate-fee
+clj꞉pre-and-post꞉> 
+; Execution error (AssertionError) at pre-and-post/calculate-fee (pre_and_post.clj:16).
+; Assert failed: (> (:amount invoice) 10)
+clj꞉pre-and-post꞉> 
+; Add a fee to this invoice.
+nil
+clj꞉pre-and-post꞉> 
+#'pre-and-post/post-check
+clj꞉pre-and-post꞉> 
+#'pre-and-post/post-check
+clj꞉pre-and-post꞉> 
+12
+clj꞉pre-and-post꞉> 
+; Execution error (AssertionError) at pre-and-post/post-check (pre_and_post.clj:26).
+; Assert failed: (> amount 10)
+clj꞉pre-and-post꞉> 
+nil
+clj꞉multi-arity꞉> 
+#'multi-arity/many0args
+clj꞉multi-arity꞉> 
+#'multi-arity/many-args
+clj꞉multi-arity꞉> 
+; (1 2 3 4)
+nil
+clj꞉multi-arity꞉> 
+; (1 2 3 4 5 6 7)
+nil
+clj꞉multi-arity꞉> 
+; nil
+nil
+clj꞉multi-arity꞉> 
+#'multi-arity/many-args-plus
+clj꞉multi-arity꞉> 
+; Syntax error macroexpanding clojure.core/defn at (src/multi_arity.clj:17:1).
+; 1 - failed: vector? at: [:fn-tail :arity-1 :params] spec: :clojure.core.specs.alpha/param-list
+; 1 - failed: (or (nil? %) (sequential? %)) at: [:fn-tail :arity-n :bodies] spec: :clojure.core.specs.alpha/params+body
+clj꞉multi-arity꞉> 
+3
+clj꞉multi-arity꞉> 
+; Execution error (ClassCastException) at multi-arity/many-args-plus (multi_arity.clj:16).
+; class clojure.lang.ArraySeq cannot be cast to class java.lang.Number (clojure.lang.ArraySeq is in unnamed module of loader 'app'; java.lang.Number is in module java.base of loader 'bootstrap')
+clj꞉multi-arity꞉> 
+#'multi-arity/many-args-plus
+clj꞉multi-arity꞉> 
+; Execution error (ClassCastException) at multi-arity/many-args-plus (multi_arity.clj:16).
+; class clojure.lang.LazySeq cannot be cast to class java.lang.Number (clojure.lang.LazySeq is in unnamed module of loader 'app'; java.lang.Number is in module java.base of loader 'bootstrap')
+clj꞉multi-arity꞉> 
+; Execution error (ClassCastException) at multi-arity/eval10863 (multi_arity.clj:19).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉multi-arity꞉> 
+; Syntax error compiling at (src/multi_arity.clj:16:10).
+; Unable to resolve symbol: sum in this context
+clj꞉multi-arity꞉> 
+; Syntax error compiling at (src/multi_arity.clj:19:1).
+; Unable to resolve symbol: sum in this context
+clj꞉multi-arity꞉> 
+; Execution error (ClassCastException) at multi-arity/eval10866 (multi_arity.clj:19).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉multi-arity꞉> 
+#'multi-arity/many-args-plus
+clj꞉multi-arity꞉> 
+3
+clj꞉multi-arity꞉> 
+3
+clj꞉multi-arity꞉> 
+3
+clj꞉multi-arity꞉> 
+#'multi-arity/many-args-plus
+clj꞉multi-arity꞉> 
+; (3 4)
+3
+clj꞉multi-arity꞉> 
+; Syntax error macroexpanding clojure.core/defn at (src/multi_arity.clj:23:1).
+; Call to clojure.core/defn did not conform to spec.
+clj꞉multi-arity꞉> 
+#'multi-arity/multi-arity
+clj꞉multi-arity꞉> 
+3
+clj꞉multi-arity꞉> 
+6
+clj꞉multi-arity꞉> 
+4
+clj꞉multi-arity꞉> 
+3
+clj꞉multi-arity꞉> 
+1
+clj꞉multi-arity꞉> 
+; Execution error (ArityException) at multi-arity/eval10883 (multi_arity.clj:28).
+; Wrong number of args (0) passed to: multi-arity/multi-arity
+clj꞉multi-arity꞉> 
+1
+clj꞉multi-arity꞉> 
+3
+clj꞉multi-arity꞉> 
+6
+clj꞉multi-arity꞉> 
+; Execution error (ArityException) at multi-arity/eval10891 (multi_arity.clj:28).
+; Wrong number of args (4) passed to: multi-arity/multi-arity
+clj꞉multi-arity꞉> 
+6
+clj꞉multi-arity꞉> 
+(= (1 2) (1 2))
+; Execution error (ClassCastException) at multi-arity/eval10895 (output.calva-repl:205).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉multi-arity꞉> 
+(= 1 1)
+true
+clj꞉multi-arity꞉> 
+(class 4)
+java.lang.Long
+clj꞉multi-arity꞉> 
+(class "Richard")
+java.lang.String
+clj꞉multi-arity꞉> 
+(class {:id 1})
+clojure.lang.PersistentArrayMap
+clj꞉multi-arity꞉> 
+nil
+clj꞉functional-things꞉> 
+#'functional-things/dracula
+clj꞉functional-things꞉> 
+#'functional-things/cheap?
+clj꞉functional-things꞉> 
+true
+clj꞉functional-things꞉> 
+#'functional-things/horror?
+clj꞉functional-things꞉> 
+true
+clj꞉functional-things꞉> 
+#'functional-things/war-and-peace
+clj꞉functional-things꞉> 
+false
+clj꞉functional-things꞉> 
+#'functional-things/cheap-book
+clj꞉functional-things꞉> 
+; Execution error (ArityException) at functional-things/eval10963 (functional_things.clj:28).
+; Wrong number of args (0) passed to: functional-things/cheap?
+clj꞉functional-things꞉> 
+#'functional-things/cheap-book
+clj꞉functional-things꞉> 
+; Syntax error compiling at (src/functional_things.clj:28:1).
+; Unable to resolve symbol: cheap-book? in this context
+clj꞉functional-things꞉> 
+#'functional-things/cheap-book?
+clj꞉functional-things꞉> 
+true
+clj꞉functional-things꞉> 
+#'functional-things/check-dracula
+clj꞉functional-things꞉> 
+true
+clj꞉functional-things꞉> 
+true
+clj꞉functional-things꞉> 
+#'functional-things/both?
+clj꞉functional-things꞉> 
+{:title "Dracula", :genre "Horror", :price 8.99}
+clj꞉functional-things꞉> 
+#function[functional-things/eval10977/fn--10978]
+clj꞉functional-things꞉> 
+#'functional-things/anon-add
+clj꞉functional-things꞉> 
+3
+clj꞉functional-things꞉> 
+#'functional-things/buy-this-book
+clj꞉functional-things꞉> 
+#function[functional-things/buy-this-book/fn--10984]
+clj꞉functional-things꞉> 
+#'functional-things/very-cheap?
+clj꞉functional-things꞉> 
+; Execution error (ClassCastException) at functional-things/buy-this-book$fn (functional_things.clj:58).
+; class clojure.lang.PersistentArrayMap cannot be cast to class java.lang.Number (clojure.lang.PersistentArrayMap is in unnamed module of loader 'app'; java.lang.Number is in module java.base of loader 'bootstrap')
+clj꞉functional-things꞉> 
+#'functional-things/very-cheap?
+clj꞉functional-things꞉> 
+; Execution error (ClassCastException) at functional-things/buy-this-book$fn (functional_things.clj:58).
+; class clojure.lang.PersistentArrayMap cannot be cast to class java.lang.Number (clojure.lang.PersistentArrayMap is in unnamed module of loader 'app'; java.lang.Number is in module java.base of loader 'bootstrap')
+clj꞉functional-things꞉> 
+#'functional-things/very-cheap?
+clj꞉functional-things꞉> 
+#function[functional-things/buy-this-book/fn--10984]
+clj꞉functional-things꞉> 
+#'functional-things/buy-this-book
+clj꞉functional-things꞉> 
+#'functional-things/very-cheap?
+clj꞉functional-things꞉> 
+nil
+clj꞉functional-things꞉> 
+#'functional-things/very-cheap?
+clj꞉functional-things꞉> 
+#'functional-things/medium-cheap>
+clj꞉functional-things꞉> 
+; Syntax error compiling def at (src/functional_things.clj:64:1).
+; Too many arguments to def
+clj꞉functional-things꞉> 
+#'functional-things/expensive?
+clj꞉functional-things꞉> 
+; Syntax error compiling at (src/functional_things.clj:66:1).
+; Unable to resolve symbol: medium-cheap? in this context
+clj꞉functional-things꞉> 
+#'functional-things/medium-cheap?
+clj꞉functional-things꞉> 
+nil
+clj꞉functional-things꞉> 
+nil
+clj꞉functional-things꞉> 
