@@ -1,6 +1,6 @@
 (ns namespaces
   (:require [def-symbols-vars :as dsv]
-            [functional-things :as ft]))
+            [functional-things :only [dracula cheap?] :as ft]))
 
 ;; in Clojure 'vars' (see def_symbols_vars.clj) live in 'namespaces.
 ;; So -> 
@@ -40,5 +40,7 @@
 (find-ns 'def-symbols-vars) ;; #namespace[def-symbols-vars]
 (ns-map (find-ns 'def-symbols-vars))
 
+;; To 'import' specific functions / values from a namespace use ':only' in the ':require' form
+(ft/cheap? ft/dracula) ;; true
 
-
+;; there is more that could be added here about namespaces - but this is sufficient for now.

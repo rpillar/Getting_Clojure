@@ -14,7 +14,7 @@
 (defn horror? [book]
   (= (:genre book) "Horror"))
 
-(cheap? dracula);; true
+(cheap? dracula) ;; true
 (horror? dracula) ;; true
 (cheap? war-and-peace) ;; false
 

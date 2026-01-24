@@ -925,3 +925,204 @@ clj꞉namespaces꞉> 
  println-str #'clojure.core/println-str,
  ...}
 clj꞉namespaces꞉> 
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; Starting Jack-in: (cd /Users/richardpillar/clojure/Getting_Clojure; lein update-in :dependencies conj '[nrepl,"1.5.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.58.0"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless)
+; Connecting using "Leiningen" project type.
+; Connecting ...
+; Reading port file: file:///Users/richardpillar/clojure/Getting_Clojure/.nrepl-port ...
+; No nrepl port file found.
+; Connect aborted.
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; Starting Jack-in: (cd /Users/richardpillar/clojure/Getting_Clojure; lein update-in :dependencies conj '[nrepl,"1.5.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.58.0"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless)
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; Starting Jack-in: (cd /Users/richardpillar/clojure/Getting_Clojure; lein update-in :dependencies conj '[nrepl,"1.5.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.58.0"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless)
+; Using host:port 127.0.0.1:52994 ...
+; Hooking up nREPL sessions on port 52994...
+; Connected session: clj, port: 52994
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉demo.core꞉> 
+"Please see https://calva.io/output/#about-stdout-in-the-repl-window
+about why stdout printed to this file is prepended with `;` to be line comments."
+clj꞉demo.core꞉> 
+; Jack-in done.
+clj꞉demo.core꞉> 
+nil
+clj꞉namespaces꞉> 
+#'namespaces/amount
+clj꞉namespaces꞉> 
+; 12.23
+nil
+clj꞉namespaces꞉> 
+; Austen
+nil
+clj꞉namespaces꞉> 
+; current namespace :  #namespace[namespaces]
+nil
+clj꞉namespaces꞉> 
+nil
+clj꞉namespaces꞉> 
+#'namespaces/my-ns
+clj꞉namespaces꞉> 
+{primitives-classnames #'clojure.core/primitives-classnames,
+ +' #'clojure.core/+',
+ Enum java.lang.Enum,
+ decimal? #'clojure.core/decimal?,
+ restart-agent #'clojure.core/restart-agent,
+ sort-by #'clojure.core/sort-by,
+ macroexpand #'clojure.core/macroexpand,
+ ensure #'clojure.core/ensure,
+ chunk-first #'clojure.core/chunk-first,
+ load-data-reader-file #'clojure.core/load-data-reader-file,
+ eduction #'clojure.core/eduction,
+ tree-seq #'clojure.core/tree-seq,
+ unchecked-remainder-int #'clojure.core/unchecked-remainder-int,
+ ends-with? #'clojure.string/ends-with?,
+ seq #'clojure.core/seq,
+ reduce #'clojure.core/reduce,
+ InternalError java.lang.InternalError,
+ when-first #'clojure.core/when-first,
+ find-ns #'clojure.core/find-ns,
+ get-thread-bindings #'clojure.core/get-thread-bindings,
+ NullPointerException java.lang.NullPointerException,
+ contains? #'clojure.core/contains?,
+ every? #'clojure.core/every?,
+ proxy-mappings #'clojure.core/proxy-mappings,
+ keep-indexed #'clojure.core/keep-indexed,
+ cond->> #'clojure.core/cond->>,
+ subs #'clojure.core/subs,
+ ref-min-history #'clojure.core/ref-min-history,
+ set #'clojure.core/set,
+ take-last #'clojure.core/take-last,
+ InheritableThreadLocal java.lang.InheritableThreadLocal,
+ bit-set #'clojure.core/bit-set,
+ reader-conditional #'clojure.core/reader-conditional,
+ gen-class #'clojure.core/gen-class,
+ qualified-keyword? #'clojure.core/qualified-keyword?,
+ while #'clojure.core/while,
+ butlast #'clojure.core/butlast,
+ satisfies? #'clojure.core/satisfies?,
+ Class java.lang.Class,
+ line-seq #'clojure.core/line-seq,
+ unchecked-subtract-int #'clojure.core/unchecked-subtract-int,
+ *print-namespace-maps* #'clojure.core/*print-namespace-maps*,
+ take-nth #'clojure.core/take-nth,
+ first #'clojure.core/first,
+ re-groups #'clojure.core/re-groups,
+ Error java.lang.Error,
+ NoSuchFieldException java.lang.NoSuchFieldException,
+ seq? #'clojure.core/seq?,
+ dec' #'clojure.core/dec',
+ ns-unmap #'clojure.core/ns-unmap,
+ ...}
+clj꞉namespaces꞉> 
+#namespace[def-symbols-vars]
+clj꞉namespaces꞉> 
+{primitives-classnames #'clojure.core/primitives-classnames,
+ +' #'clojure.core/+',
+ Enum java.lang.Enum,
+ decimal? #'clojure.core/decimal?,
+ restart-agent #'clojure.core/restart-agent,
+ sort-by #'clojure.core/sort-by,
+ macroexpand #'clojure.core/macroexpand,
+ ensure #'clojure.core/ensure,
+ chunk-first #'clojure.core/chunk-first,
+ eduction #'clojure.core/eduction,
+ tree-seq #'clojure.core/tree-seq,
+ unchecked-remainder-int #'clojure.core/unchecked-remainder-int,
+ seq #'clojure.core/seq,
+ reduce #'clojure.core/reduce,
+ InternalError java.lang.InternalError,
+ when-first #'clojure.core/when-first,
+ find-ns #'clojure.core/find-ns,
+ get-thread-bindings #'clojure.core/get-thread-bindings,
+ NullPointerException java.lang.NullPointerException,
+ contains? #'clojure.core/contains?,
+ every? #'clojure.core/every?,
+ proxy-mappings #'clojure.core/proxy-mappings,
+ keep-indexed #'clojure.core/keep-indexed,
+ cond->> #'clojure.core/cond->>,
+ subs #'clojure.core/subs,
+ ref-min-history #'clojure.core/ref-min-history,
+ set #'clojure.core/set,
+ take-last #'clojure.core/take-last,
+ InheritableThreadLocal java.lang.InheritableThreadLocal,
+ bit-set #'clojure.core/bit-set,
+ reader-conditional #'clojure.core/reader-conditional,
+ gen-class #'clojure.core/gen-class,
+ qualified-keyword? #'clojure.core/qualified-keyword?,
+ while #'clojure.core/while,
+ ->Eduction #'clojure.core/->Eduction,
+ butlast #'clojure.core/butlast,
+ satisfies? #'clojure.core/satisfies?,
+ Class java.lang.Class,
+ line-seq #'clojure.core/line-seq,
+ unchecked-subtract-int #'clojure.core/unchecked-subtract-int,
+ *print-namespace-maps* #'clojure.core/*print-namespace-maps*,
+ take-nth #'clojure.core/take-nth,
+ first #'clojure.core/first,
+ re-groups #'clojure.core/re-groups,
+ Error java.lang.Error,
+ NoSuchFieldException java.lang.NoSuchFieldException,
+ seq? #'clojure.core/seq?,
+ dec' #'clojure.core/dec',
+ ns-unmap #'clojure.core/ns-unmap,
+ println-str #'clojure.core/println-str,
+ ...}
+clj꞉namespaces꞉> 
+nil
+clj꞉namespaces꞉> 
+nil
+clj꞉namespaces꞉> 
+; Execution error (ArityException) at namespaces/eval10549 (namespaces.clj:44).
+; Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap
+clj꞉namespaces꞉> 
+; Syntax error compiling at (src/namespaces.clj:44:10).
+; Unable to resolve symbol: dracula in this context
+clj꞉namespaces꞉> 
+; Execution error (ArityException) at namespaces/eval10591 (namespaces.clj:44).
+; Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap
+clj꞉namespaces꞉> 
+; Syntax error compiling at (src/namespaces.clj:44:10).
+; Unable to resolve symbol: dracula in this context
+clj꞉namespaces꞉> 
+; Syntax error compiling at (src/namespaces.clj:44:1).
+; Unable to resolve symbol: dracula in this context
+clj꞉namespaces꞉> 
+; Syntax error compiling at (src/namespaces.clj:44:1).
+; Unable to resolve symbol: dracula in this context
+clj꞉namespaces꞉> 
+nil
+clj꞉namespaces꞉> 
+; Syntax error compiling at (src/namespaces.clj:44:1).
+; Unable to resolve symbol: dracula in this context
+clj꞉namespaces꞉> 
+; {:title Dracula, :genre Horror, ...}
+nil
+clj꞉namespaces꞉> 
+; {:title "Dracula", :genre "Horror", ...}
+nil
+clj꞉namespaces꞉> 
+; Syntax error compiling at (src/namespaces.clj:44:1).
+; Unable to resolve symbol: dracula in this context
+clj꞉namespaces꞉> 
+nil
+clj꞉functional-things꞉> 
+#'functional-things/dracula
+clj꞉functional-things꞉> 
+#'functional-things/cheap?
+clj꞉functional-things꞉> 
+true
+clj꞉functional-things꞉> 
+; Syntax error compiling at (src/namespaces.clj:44:1).
+; Unable to resolve symbol: cheap? in this context
+clj꞉namespaces꞉> 
+(ft/cheap? dracula)
+; Syntax error compiling at (.calva/repl.calva-repl:1123:1).
+; Unable to resolve symbol: dracula in this context
+clj꞉namespaces꞉> 
+true
+clj꞉namespaces꞉> 
